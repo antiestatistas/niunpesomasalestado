@@ -1,8 +1,8 @@
-const exampleDataA = [
+const exampleDataA1 = [
     {
         id: 1,
         active: true,
-        title: 'Celebration A',
+        title: 'Celebration A1',
         details: `
         <p>Come on, this is a Bluth family celebration. It's no place for children.</p>
         `
@@ -10,7 +10,7 @@ const exampleDataA = [
     {
         id: 2,
         active: false,
-        title: 'Lighter Fluid and Wine A',
+        title: 'Lighter Fluid and Wine A1',
         details: `
         <p>But where did the lighter fluid come from? Wine only turns to alcohol if you let it sit. But anyhoo, can you believe that the only reason the club is going under is because it's in a terrifying neighborhood?</p>
         `
@@ -18,7 +18,63 @@ const exampleDataA = [
     {
         id: 3,
         active: false,
-        title: `What's in Oscar's box? A`,
+        title: `What's in Oscar's box? A1`,
+        details: `
+        <p>In fact, it was a box of Oscar's legally obtained medical marijuana. Primo bud. Real sticky weed.</p>
+        <p>Great, now I'm gonna smell to high heaven like a tuna melt!</p>
+        `
+    }
+]
+
+const exampleDataA2 = [
+    {
+        id: 1,
+        active: true,
+        title: 'Celebration A2',
+        details: `
+        <p>Come on, this is a Bluth family celebration. It's no place for children.</p>
+        `
+    },
+    {
+        id: 2,
+        active: false,
+        title: 'Lighter Fluid and Wine A2',
+        details: `
+        <p>But where did the lighter fluid come from? Wine only turns to alcohol if you let it sit. But anyhoo, can you believe that the only reason the club is going under is because it's in a terrifying neighborhood?</p>
+        `
+    },
+    {
+        id: 3,
+        active: false,
+        title: `What's in Oscar's box? A2`,
+        details: `
+        <p>In fact, it was a box of Oscar's legally obtained medical marijuana. Primo bud. Real sticky weed.</p>
+        <p>Great, now I'm gonna smell to high heaven like a tuna melt!</p>
+        `
+    }
+]
+
+const exampleDataA3 = [
+    {
+        id: 1,
+        active: true,
+        title: 'Celebration A3',
+        details: `
+        <p>Come on, this is a Bluth family celebration. It's no place for children.</p>
+        `
+    },
+    {
+        id: 2,
+        active: false,
+        title: 'Lighter Fluid and Wine A3',
+        details: `
+        <p>But where did the lighter fluid come from? Wine only turns to alcohol if you let it sit. But anyhoo, can you believe that the only reason the club is going under is because it's in a terrifying neighborhood?</p>
+        `
+    },
+    {
+        id: 3,
+        active: false,
+        title: `What's in Oscar's box? A3`,
         details: `
         <p>In fact, it was a box of Oscar's legally obtained medical marijuana. Primo bud. Real sticky weed.</p>
         <p>Great, now I'm gonna smell to high heaven like a tuna melt!</p>
@@ -214,8 +270,13 @@ Vue.component('tab', {
 var anxo = new Vue({ 
     el: '#v-root',
     data: {
-        exampleA: exampleDataA,
+        exampleA1: exampleDataA1,
+        exampleA2: exampleDataA2,
+        exampleA3: exampleDataA3,
         exampleB: exampleDataB,
         exampleC: exampleDataC,
+        checkedA: true,
+        checkedB: true,
+        checkedC: true
     }
 });

@@ -17,6 +17,11 @@
                         <div slot="tabinner">
                             <div id="app">
                                 <div class="content">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" v-model="checkedA">tag A1</label>
+                                        <label><input type="checkbox" v-model="checkedB">tag A2</label>
+                                        <label><input type="checkbox" v-model="checkedC">tag A3</label>
+                                    </div>                                    
                                     <p class="subtitle"><strong>A</strong> Section</p>
                                     <h1 class="title">Accordion</h1>
                                     <hr/>
@@ -24,7 +29,9 @@
                                     <section class="section">
                                         <h3>Multiple Active Items</h3>
                                         <p>Add the <code>multiple</code> attribute to allow more than one accordion item's details to be showing.</p>
-                                        <accordion id="accordion-example-2" :content="exampleA" multiple="multiple"></accordion>
+                                        <accordion v-if="checkedA" id="accordion-example-2" :content="exampleA1" multiple="multiple"></accordion>
+                                        <accordion v-if="checkedB" id="accordion-example-2" :content="exampleA2" multiple="multiple"></accordion>
+                                        <accordion v-if="checkedC" id="accordion-example-2" :content="exampleA3" multiple="multiple"></accordion>
                                     </section>
                                 </div>
                             </div> 
